@@ -1,0 +1,924 @@
+fileFormatVersion: 2
+guid: d45ca03ad59e19203966e0a3a6d28998
+importerOverride:
+  nativeImporterType: 2089858483
+  scriptedImporterType:
+    serializedVersion: 2
+    Hash: b10b55a1aa6a1aa32521bc0cab59632e
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: b2a9591990af98743ba3ff7cf1000886, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 1
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 1
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 2
+    aniso: 0
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  spriteImportData:
+  - name: Ducks_1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 2688
+      height: 1242
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+    spritePosition: {x: 0, y: 0}
+  mosaicSpriteImportData: []
+  rigSpriteImportData:
+  - name: Rounded Rectangle 1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2827
+      y: 593
+      width: 54
+      height: 60
+    spriteID: 1172799a94d09fab984346597ba23f59
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2827, y: 593}
+    spritePosition: {x: 2592, y: 1154}
+  - name: Rounded Rectangle 1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4007
+      y: 258
+      width: 55
+      height: 60
+    spriteID: 7b83c45821efda7f29c59d34c40637f4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4007, y: 258}
+    spritePosition: {x: 2519, y: 1154}
+  - name: Rounded Rectangle 1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2701
+      y: 593
+      width: 55
+      height: 60
+    spriteID: 5906e1baa864bd33fa5bb6abe23dece6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2701, y: 593}
+    spritePosition: {x: 2446, y: 1154}
+  - name: Rounded Rectangle 1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2764
+      y: 593
+      width: 55
+      height: 60
+    spriteID: aac0c8637e3fa8fd4b7efa83c6410e02
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2764, y: 593}
+    spritePosition: {x: 2373, y: 1154}
+  - name: Rounded Rectangle 1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2889
+      y: 593
+      width: 54
+      height: 60
+    spriteID: 685af56716572cefa8db519b03d96799
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2889, y: 593}
+    spritePosition: {x: 2301, y: 1154}
+  - name: Hand
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3539
+      y: 339
+      width: 212
+      height: 178
+    spriteID: d086e82104e7a0ff68173ebe71ee156c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3539, y: 339}
+    spritePosition: {x: 1442, y: 191}
+  - name: Water
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3759
+      y: 392
+      width: 312
+      height: 41
+    spriteID: b7330d1de486558d8acd066de4f44754
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3759, y: 392}
+    spritePosition: {x: 589, y: 829}
+  - name: Basket
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3661
+      y: 4
+      width: 414
+      height: 182
+    spriteID: 077ef651b8aeb066eb9f856b40ed1b15
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3661, y: 4}
+    spritePosition: {x: 537, y: 726}
+  - name: Shadow
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3661
+      y: 194
+      width: 338
+      height: 56
+    spriteID: 527ef8b3d6d09e207819d037c10239ca
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3661, y: 194}
+    spritePosition: {x: 576, y: 712}
+  - name: Water
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3759
+      y: 441
+      width: 312
+      height: 41
+    spriteID: b71b17a63e014858a9532e4812106028
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3759, y: 441}
+    spritePosition: {x: 1178, y: 829}
+  - name: Basket
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2701
+      y: 339
+      width: 414
+      height: 182
+    spriteID: 3728b156b358db0c3923265575e3fd7e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2701, y: 339}
+    spritePosition: {x: 1127, y: 726}
+  - name: Shadow
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3661
+      y: 258
+      width: 338
+      height: 56
+    spriteID: 5c03e6e5e62f6d27d82a666305f05582
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3661, y: 258}
+    spritePosition: {x: 1166, y: 712}
+  - name: Water
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3047
+      y: 529
+      width: 312
+      height: 41
+    spriteID: 3dfac11dc9eb1b28daa63ef65ebe42f7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3047, y: 529}
+    spritePosition: {x: 1767, y: 829}
+  - name: Basket
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3123
+      y: 339
+      width: 408
+      height: 176
+    spriteID: 5e1b27b4943a83441ad18f03813abd86
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3123, y: 339}
+    spritePosition: {x: 1719, y: 729}
+  - name: Shadow
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2701
+      y: 529
+      width: 338
+      height: 56
+    spriteID: f7ac8f6b2051b573d971ab7c15facc27
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2701, y: 529}
+    spritePosition: {x: 1755, y: 712}
+  - name: Duck
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3037
+      y: 4
+      width: 304
+      height: 303
+    spriteID: 45e77d65041cf15e091b87edf3034def
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3037, y: 4}
+    spritePosition: {x: 1891, y: 299}
+  - name: Shadow
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3656
+      y: 529
+      width: 280
+      height: 41
+    spriteID: f64dc131d8202180ea0cbf3166f51fc4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3656, y: 529}
+    spritePosition: {x: 1898, y: 290}
+  - name: Duck
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3349
+      y: 4
+      width: 304
+      height: 303
+    spriteID: 7e409294f49b3f14e9fec1e09189e54e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3349, y: 4}
+    spritePosition: {x: 591, y: 277}
+  - name: Shadow
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3367
+      y: 529
+      width: 281
+      height: 41
+    spriteID: 946b155ed6254b93a9e2930d41af7b0c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3367, y: 529}
+    spritePosition: {x: 608, y: 268}
+  - name: Duck
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2701
+      y: 4
+      width: 328
+      height: 327
+    spriteID: e70e44a1c030f4e28b93406998459209
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2701, y: 4}
+    spritePosition: {x: 1165, y: 236}
+  - name: Shadow
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3759
+      y: 339
+      width: 304
+      height: 45
+    spriteID: 2e1135da720325bfc8b182c4c938f769
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3759, y: 339}
+    spritePosition: {x: 1183, y: 225}
+  - name: Back
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 2689
+      height: 1243
+    spriteID: 1d107c3c260acd5f38992b593e797f56
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+    spritePosition: {x: 0, y: 0}
+  characterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+    pivot: {x: 0, y: 0}
+    boneReadOnly: 0
+  sharedRigSpriteImportData: []
+  sharedRigCharacterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+    pivot: {x: 0, y: 0}
+    boneReadOnly: 0
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 4096
+    resizeAlgorithm: 1
+    textureFormat: 4
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  mosaicLayers: 1
+  characterMode: 1
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 0
+  importHiddenLayers: 0
+  layerMappingOption: 2
+  generatePhysicsShape: 0
+  paperDollMode: 0
+  keepDupilcateSpriteName: 1
+  skeletonAssetReferenceID: 
+  pipeline: {instanceID: 0}
+  pipelineVersion: 
+  padding: 4
+  spriteSizeExpand: 1
+  spriteCategoryList:
+    categories: []
+  spritePackingTag: 
+  resliceFromLayer: 0
+  mosaicPSDLayers: []
+  rigPSDLayers:
+  - name: Points
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: d6cdca1b8220c637384829bb903df0e7
+    layerID: 653
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Rounded Rectangle 1
+    spriteName: Rounded Rectangle 1
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 1172799a94d09fab984346597ba23f59
+    layerID: 651
+    mosaicPosition: {x: 2827, y: 593}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Rounded Rectangle 1
+    spriteName: Rounded Rectangle 1
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 7b83c45821efda7f29c59d34c40637f4
+    layerID: 648
+    mosaicPosition: {x: 4007, y: 258}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Rounded Rectangle 1
+    spriteName: Rounded Rectangle 1
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 5906e1baa864bd33fa5bb6abe23dece6
+    layerID: 645
+    mosaicPosition: {x: 2701, y: 593}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Rounded Rectangle 1
+    spriteName: Rounded Rectangle 1
+    isGroup: 0
+    parentIndex: 0
+    spriteID: aac0c8637e3fa8fd4b7efa83c6410e02
+    layerID: 642
+    mosaicPosition: {x: 2764, y: 593}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Rounded Rectangle 1
+    spriteName: Rounded Rectangle 1
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 685af56716572cefa8db519b03d96799
+    layerID: 639
+    mosaicPosition: {x: 2889, y: 593}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Hand
+    spriteName: Hand
+    isGroup: 0
+    parentIndex: -1
+    spriteID: d086e82104e7a0ff68173ebe71ee156c
+    layerID: 589
+    mosaicPosition: {x: 3539, y: 339}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Basket1
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: d341243d2cdd26f18b45e9cf4ee20f21
+    layerID: 581
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Water
+    spriteName: Water
+    isGroup: 0
+    parentIndex: 7
+    spriteID: b7330d1de486558d8acd066de4f44754
+    layerID: 580
+    mosaicPosition: {x: 3759, y: 392}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Basket
+    spriteName: Basket
+    isGroup: 0
+    parentIndex: 7
+    spriteID: 077ef651b8aeb066eb9f856b40ed1b15
+    layerID: 579
+    mosaicPosition: {x: 3661, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Shadow
+    spriteName: Shadow
+    isGroup: 0
+    parentIndex: 7
+    spriteID: 527ef8b3d6d09e207819d037c10239ca
+    layerID: 578
+    mosaicPosition: {x: 3661, y: 194}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Basket2
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 46c4168e066b9a2ab9a873db16ec1988
+    layerID: 576
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Water
+    spriteName: Water
+    isGroup: 0
+    parentIndex: 11
+    spriteID: b71b17a63e014858a9532e4812106028
+    layerID: 575
+    mosaicPosition: {x: 3759, y: 441}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Basket
+    spriteName: Basket
+    isGroup: 0
+    parentIndex: 11
+    spriteID: 3728b156b358db0c3923265575e3fd7e
+    layerID: 574
+    mosaicPosition: {x: 2701, y: 339}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Shadow
+    spriteName: Shadow
+    isGroup: 0
+    parentIndex: 11
+    spriteID: 5c03e6e5e62f6d27d82a666305f05582
+    layerID: 573
+    mosaicPosition: {x: 3661, y: 258}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Basket3
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 78af297099d3212cc9b9561cfa32ac14
+    layerID: 586
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Water
+    spriteName: Water
+    isGroup: 0
+    parentIndex: 15
+    spriteID: 3dfac11dc9eb1b28daa63ef65ebe42f7
+    layerID: 585
+    mosaicPosition: {x: 3047, y: 529}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Basket
+    spriteName: Basket
+    isGroup: 0
+    parentIndex: 15
+    spriteID: 5e1b27b4943a83441ad18f03813abd86
+    layerID: 584
+    mosaicPosition: {x: 3123, y: 339}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Shadow
+    spriteName: Shadow
+    isGroup: 0
+    parentIndex: 15
+    spriteID: f7ac8f6b2051b573d971ab7c15facc27
+    layerID: 583
+    mosaicPosition: {x: 2701, y: 529}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Duck1
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 5483712000ecb0de388281af6b6a9bde
+    layerID: 571
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Duck
+    spriteName: Duck
+    isGroup: 0
+    parentIndex: 19
+    spriteID: 45e77d65041cf15e091b87edf3034def
+    layerID: 570
+    mosaicPosition: {x: 3037, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Shadow
+    spriteName: Shadow
+    isGroup: 0
+    parentIndex: 19
+    spriteID: f64dc131d8202180ea0cbf3166f51fc4
+    layerID: 568
+    mosaicPosition: {x: 3656, y: 529}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Duck2
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: b354bb9bbee35212196741cea1e08da2
+    layerID: 566
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Duck
+    spriteName: Duck
+    isGroup: 0
+    parentIndex: 22
+    spriteID: 7e409294f49b3f14e9fec1e09189e54e
+    layerID: 565
+    mosaicPosition: {x: 3349, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Shadow
+    spriteName: Shadow
+    isGroup: 0
+    parentIndex: 22
+    spriteID: 946b155ed6254b93a9e2930d41af7b0c
+    layerID: 563
+    mosaicPosition: {x: 3367, y: 529}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Duck3
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 5bffc38a5e7f08331b442da252c7ac55
+    layerID: 561
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Duck
+    spriteName: Duck
+    isGroup: 0
+    parentIndex: 25
+    spriteID: e70e44a1c030f4e28b93406998459209
+    layerID: 560
+    mosaicPosition: {x: 2701, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Shadow
+    spriteName: Shadow
+    isGroup: 0
+    parentIndex: 25
+    spriteID: 2e1135da720325bfc8b182c4c938f769
+    layerID: 559
+    mosaicPosition: {x: 3759, y: 339}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Back
+    spriteName: Back
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 1d107c3c260acd5f38992b593e797f56
+    layerID: 635
+    mosaicPosition: {x: 4, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  sharedRigPSDLayers: []
+  pSDLayerImportSetting: []
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 638546862502388080
+  spriteSizeExpandChanged: 1
+  generateGOHierarchy: 1
+  textureAssetName: 
+  prefabAssetName: 
+  spriteLibAssetName: 
+  skeletonAssetName: 
+  secondarySpriteTextures: []
