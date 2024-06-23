@@ -5,81 +5,88 @@ using UnityEngine.Splines;
 
 public class DuckManager : MonoBehaviour
 {
-    public Basket[] baskets;
-    public Duck[] ducks;
-    public SplineContainer[] splines;
-    
-    public GameObject basketParticle;
-    public GameObject dropParicle;
-    public GameObject triumphParticle;
+    public Basket[] baskets; // Array of baskets
+    public Duck[] ducks; // Array of ducks
+    public SplineContainer[] splines; // Array of splines
 
-    public Duck heldDuck;
+    public GameObject basketParticle; // Particle effect for basket appearance
+    public GameObject dropParicle; // Particle effect for duck dropping
+    public GameObject triumphParticle; // Particle effect for level completion
 
-    public PointUI[] pUI;
-    int pointIndex = 0;
+    public Duck heldDuck; // Currently held duck
 
-    bool inactive;
-    public float inactiveTimer = 8f;
+    public PointUI[] pUI; // Array of UI points
+    int pointIndex = 0; // Index for the current point
 
-    public GameObject gameOverScreen;
-    List<Duck> activeDucks = new List<Duck>();
+    bool inactive; // Flag to check if the game is inactive
+    public float inactiveTimer = 8f; // Timer for inactivity
 
-    public Transform handObject;
+    public GameObject gameOverScreen; // Game over screen
+    List<Duck> activeDucks = new List<Duck>(); // List of active ducks
+
+    public Transform handObject; // Transform of the hand object
+
+    private Coroutine inactiveCoroutine; // Handle for the InactiveCooldown coroutine
 
     void Start()
     {
-        StartCoroutine(StartGame(true));
+        StartCoroutine(StartGame(true)); // Start the game
     }
 
     IEnumerator StartGame(bool firstTime)
     {
-        if (firstTime) { BasketCtl(false); }
-        DucksRollOut();
+        if (firstTime)
+        {
+            BasketCtl(false); // Disable baskets at the start
+        }
 
-        yield return new WaitForSeconds(1f);
-    
-        if (firstTime) { BasketCtl(true); }
+        DucksRollOut(); // Initialize ducks
+
+        yield return new WaitForSeconds(1f); // Wait for a second
+
+        if (firstTime)
+        {
+            BasketCtl(true); // Enable baskets after initialization
+        }
     }
 
     void BasketCtl(bool enabled)
     {
-        GameObject bObject;
-        Transform bTransform;
-
-        foreach(Basket basket in baskets)
+        // Control the visibility of baskets and instantiate particles
+        foreach (Basket basket in baskets)
         {
-            bObject = basket.gameObject;
-            bTransform = basket.transform;
+            GameObject bObject = basket.gameObject;
+            Transform bTransform = basket.transform;
 
-            bObject.SetActive(enabled);
-            if (enabled) { Instantiate (basketParticle, bTransform.position, bTransform.rotation); }
+            bObject.SetActive(enabled); // Set basket active/inactive
+            if (enabled)
+            {
+                Instantiate(basketParticle, bTransform.position, bTransform.rotation); // Instantiate particle effect
+            }
         }
     }
 
     void DucksRollOut()
     {
-        // Shuffle the splines array
-        ShuffleSplines();
+        ShuffleSplines(); // Shuffle the splines array
 
         for (int i = 0; i < ducks.Length; i++)
         {
-            // Instantiate the duck at a position, you might want to set a specific position or use a prefab's position
-            Duck duckInstance = Instantiate(ducks[i], Vector3.zero, Quaternion.identity);
-            activeDucks.Add(duckInstance);
+            Duck duckInstance = Instantiate(ducks[i], Vector3.zero, Quaternion.identity); // Instantiate duck at the origin
+            activeDucks.Add(duckInstance); // Add duck to the active list
 
-            // Get the SplineAnimate component from the instantiated duck
-            SplineAnimate splineAnimator = duckInstance.splineAnimator;
+            SplineAnimate splineAnimator = duckInstance.splineAnimator; // Get the SplineAnimate component
             
-            // Set the spline for the duck
             if (splineAnimator != null && i < splines.Length)
             {
-                splineAnimator.Container = splines[i];
+                splineAnimator.Container = splines[i]; // Assign spline to the duck
             }
         }
     }
-    
+
     void ShuffleSplines()
     {
+        // Shuffle the splines array using Fisher-Yates algorithm
         System.Random rng = new System.Random();
         int n = splines.Length;
         while (n > 1)
@@ -94,40 +101,46 @@ public class DuckManager : MonoBehaviour
 
     public void AddDuck(Duck duck)
     {
-        heldDuck = duck;
-        inactive = false;
-        handObject.gameObject.SetActive(false);
+        heldDuck = duck; // Set the currently held duck
+        inactive = false; // Reset inactivity flag
+        handObject.gameObject.SetActive(false); // Hide the hand object
+
+        if (inactiveCoroutine != null)
+        {
+            StopCoroutine(inactiveCoroutine); // Stop the inactivity cooldown coroutine
+            inactiveCoroutine = null;
+        }
     }
 
     public void RemoveDuck(Duck duck)
     {
-        activeDucks.Remove(duck);
+        activeDucks.Remove(duck); // Remove duck from the active list
         if (activeDucks.Count == 0)
         {
-            FinishSequence();
+            FinishSequence(); // Finish the sequence if no active ducks remain
         }
     }
 
     void FinishSequence()
     {
-        Instantiate(triumphParticle);
+        Instantiate(triumphParticle); // Instantiate triumph particle effect
 
-        pUI[pointIndex].Activate();
-        pointIndex++;       
+        pUI[pointIndex].Activate(); // Activate the current point UI
+        pointIndex++; // Move to the next point
 
         if (pointIndex < pUI.Length)
         {
-            StartCoroutine(StartGame(false));
+            StartCoroutine(StartGame(false)); // Start the next game round
         }
         else
         {
-            FinishGame();
+            FinishGame(); // Finish the game if all points are activated
         }
     }
 
     void FinishGame()
     {
-        gameOverScreen.SetActive(true);
+        gameOverScreen.SetActive(true); // Display the game over screen
     }
 
     void Update()
@@ -136,24 +149,24 @@ public class DuckManager : MonoBehaviour
         {
             if (!inactive)
             {
-                StartCoroutine(InactiveCooldown());
+                inactiveCoroutine = StartCoroutine(InactiveCooldown()); // Start the inactivity cooldown
             }
         }
     }
 
     IEnumerator InactiveCooldown()
     {
-        inactive = true;
+        inactive = true; // Set inactivity flag
 
-        yield return new WaitForSeconds (inactiveTimer);
+        yield return new WaitForSeconds(inactiveTimer); // Wait for the inactivity timer
 
         if (inactive)
         {
+            // Move the hand object to a random active duck position
             Vector3 randomDuckPos = activeDucks[Random.Range(0, activeDucks.Count)].transform.position;
-
             handObject.transform.position = randomDuckPos;
 
-            handObject.gameObject.SetActive(true);
+            handObject.gameObject.SetActive(true); // Show the hand object
         }
     }
 }
