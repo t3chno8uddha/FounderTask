@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Splines;
 
@@ -9,8 +10,21 @@ public class DuckManager : MonoBehaviour
     public SplineContainer[] splines;
     
     public GameObject basketParticle;
+    public GameObject dropParicle;
+    public GameObject triumphParticle;
 
     public Duck heldDuck;
+
+    public PointUI[] pUI;
+    int pointIndex = 0;
+
+    bool inactive;
+    public float inactiveTimer = 8f;
+
+    public GameObject gameOverScreen;
+    List<Duck> activeDucks = new List<Duck>();
+
+    public Transform handObject;
 
     void Start()
     {
@@ -26,7 +40,6 @@ public class DuckManager : MonoBehaviour
     
         if (firstTime) { BasketCtl(true); }
     }
-
 
     void BasketCtl(bool enabled)
     {
@@ -52,7 +65,8 @@ public class DuckManager : MonoBehaviour
         {
             // Instantiate the duck at a position, you might want to set a specific position or use a prefab's position
             Duck duckInstance = Instantiate(ducks[i], Vector3.zero, Quaternion.identity);
-            
+            activeDucks.Add(duckInstance);
+
             // Get the SplineAnimate component from the instantiated duck
             SplineAnimate splineAnimator = duckInstance.splineAnimator;
             
@@ -75,6 +89,71 @@ public class DuckManager : MonoBehaviour
             SplineContainer value = splines[k];
             splines[k] = splines[n];
             splines[n] = value;
+        }
+    }
+
+    public void AddDuck(Duck duck)
+    {
+        heldDuck = duck;
+        inactive = false;
+        handObject.gameObject.SetActive(false);
+    }
+
+    public void RemoveDuck(Duck duck)
+    {
+        activeDucks.Remove(duck);
+        if (activeDucks.Count == 0)
+        {
+            FinishSequence();
+        }
+    }
+
+    void FinishSequence()
+    {
+        Instantiate(triumphParticle);
+
+        pUI[pointIndex].Activate();
+        pointIndex++;       
+
+        if (pointIndex < pUI.Length)
+        {
+            StartCoroutine(StartGame(false));
+        }
+        else
+        {
+            FinishGame();
+        }
+    }
+
+    void FinishGame()
+    {
+        gameOverScreen.SetActive(true);
+    }
+
+    void Update()
+    {
+        if (!heldDuck)
+        {
+            if (!inactive)
+            {
+                StartCoroutine(InactiveCooldown());
+            }
+        }
+    }
+
+    IEnumerator InactiveCooldown()
+    {
+        inactive = true;
+
+        yield return new WaitForSeconds (inactiveTimer);
+
+        if (inactive)
+        {
+            Vector3 randomDuckPos = activeDucks[Random.Range(0, activeDucks.Count)].transform.position;
+
+            handObject.transform.position = randomDuckPos;
+
+            handObject.gameObject.SetActive(true);
         }
     }
 }

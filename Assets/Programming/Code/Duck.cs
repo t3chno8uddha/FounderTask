@@ -106,8 +106,8 @@ public class Duck : ColorBehaviour
         isHeld = held;
         duckAnimator.SetBool("Is Held", held);
         
-        if (held) { dManager.heldDuck = this; }
-        else { dManager.heldDuck = null; }
+        if (held) { dManager.AddDuck(this); }
+        else { dManager.AddDuck(null); }
     }
 
     void OnTriggerEnter2D(Collider2D col)
@@ -127,6 +127,10 @@ public class Duck : ColorBehaviour
     {
         isFinished = true;
         duckAnimator.SetBool("Finished", isFinished);
+
+        Instantiate(dManager.dropParicle, basket.transform.position, basket.transform.rotation);
+
+        dManager.RemoveDuck(this);
     
         Destroy(GetComponent<Collider2D>());
 
