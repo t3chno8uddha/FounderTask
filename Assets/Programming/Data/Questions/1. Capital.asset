@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5012996d3e6cc0d29636edef60785c7, type: 3}
+  m_Name: 1. Capital
+  m_EditorClassIdentifier: 
+  question: What is the capital of Georgia?
+  answers:
+  - answer: London
+    correct: 0
+  - answer: Xashuri
+    correct: 0
+  - answer: Tbilisi
+    correct: 1
+  - answer: Gori
+    correct: 0

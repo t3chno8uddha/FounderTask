@@ -86,16 +86,16 @@ public class DuckManager : MonoBehaviour
 
     void ShuffleSplines()
     {
-        // Shuffle the splines array using Fisher-Yates algorithm
+        // Shuffle the splines array algorithm
         System.Random rng = new System.Random();
-        int n = splines.Length;
-        while (n > 1)
+        int count = splines.Length;
+        while (count > 1)
         {
-            n--;
-            int k = rng.Next(n + 1);
-            SplineContainer value = splines[k];
-            splines[k] = splines[n];
-            splines[n] = value;
+            count--;
+            int randomIndex = rng.Next(count + 1);
+            SplineContainer value = splines[randomIndex];
+            splines[randomIndex] = splines[count];
+            splines[count] = value;
         }
     }
 

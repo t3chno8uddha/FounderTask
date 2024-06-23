@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5012996d3e6cc0d29636edef60785c7, type: 3}
+  m_Name: 4. Greek god
+  m_EditorClassIdentifier: 
+  question: Which of these Greek gods was described as crippled?
+  answers:
+  - answer: Hephaestus
+    correct: 1
+  - answer: Apollo
+    correct: 0
+  - answer: Poseidon
+    correct: 0
+  - answer: Zeus
+    correct: 0
